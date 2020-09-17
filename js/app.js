@@ -1,6 +1,7 @@
 const menuItems = document.querySelectorAll('#navbar-list li a');
 
 const sendItem = document.querySelector('#sendButton');
+sendItem.disabled = true
 const form = document.querySelector('form');
 
 form.addEventListener('keyup', handleValue)
