@@ -62,7 +62,7 @@ h2 {
 
 #main-banner {
   height: 70vh;
-  background-image: url('../img/bg-projeto.jpg');
+  background-image: url('../img/dev.jpg');
   background-size: cover;
   padding-top: 15vh;
 }
@@ -139,35 +139,50 @@ h2 {
   padding: 60px 25px;
 }
 
+.skills-container .tecnologias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-container .tecnologias .tec-cont {
+  flex: 1 1 20px;
+  height: 80px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.skills-container .tecnologias .tec-cont img {
+  height: 35px;
+}
+
 .central {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
 
 .skills-container h3 {
-  color: #ED1E24;
+  color: #333;
   font-size: 20px;
 }
 
 .skills-container img {
   height: 60px;
   padding: 15px;
-  margin-bottom: 25px;
-  border-top: 1px solid #ED1E24;
-  border-left: 1px solid #ED1E24;
-  border-bottom: 4px solid #ED1E24;
-  border-right: 4px solid #ED1E24;
+  margin-bottom: 15px;
+
 }
 
 .skills-container .subtitle {
   font-weight: bold;
-  color: #ED1E24;
+  color: #3d3d3d;
   margin-top: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .skills-container p {
-  line-height: 25px;
+  line-height: 15px;
 }
 
 /*  jobs  */
@@ -178,17 +193,18 @@ h2 {
 }
 
 #jobs-section h2 {
-  color: #ED1E24;
+  color: #fff;
   margin-bottom: 30px;
 }
 
 #jobs-section p {
   margin-bottom: 50px;
+  color: #fff;
 }
 
 #jobs-section a {
   font-weight: bold;
-  color: #ED1E24
+  color: #fff
 }
 
 .job-container {
@@ -201,19 +217,82 @@ h2 {
   margin-bottom: 50px;
 }
 
-.job-box {
-  flex: 1 1 200px;
-  margin-left: 25px;
-  margin-right: 25px;
-  height: 300px;
-  background-size: cover;
-  border-right: 2px solid #ED1E24;
-  border-bottom: 2px solid #ED1E24;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 0 5px 0 #e2e2e2;
+  position: relative;
+  margin: 0 10px;
+}
+
+.card::after,
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform .3s ease-in-out;
+}
+
+.card::before {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: scaleY(0);
+}
+.card::after {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: scaleX(0);
+}
+
+.card:hover::before {
+  transform: scaleY(1);
+}
+
+.card:hover::after {
+  transform: scaleX(1);
+}
+
+.card img {
+  width: 350px;
+}
+
+.info {
+  display: inline-block;
+}
+
+.info h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.info button {
+  background: #491bc7;
+  font-size: 18px;
+  width: 80%;
+  height: 56px;
+  border: 1px solid #338033;
+  border-radius: 4px;
+  color: #ccc;
+
+}
+
+.info button:hover {
+  background: #2f1280;
 }
 
 .proj1 {
-  background-image: url('../img/proj1.jpg');
+  background-image: url('../img/qrcode.png');
+
+
 }
+
 .proj2 {
   background-image: url('../img/proj2.jpg');
 }
