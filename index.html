@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Felipe Libertinni</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -45,7 +46,7 @@
         <div class="skills-container">
           <img src="img/weapon1.png" alt="weapon1">
           <h3>Desenvolvimento</h3>
-          <p>Minha maior paixão é codar e ver as minhas criações sendo usada.</p>
+          <p>Minha maior paixão é codar e ver as minhas criações sendo usada e ajudando ao próximo. Gosto bastante da stack Javascript, atualmente me especializando mais nela.</p>
           <p class="subtitle">Linguagens que utilizo:</p>
           <div class="tecnologias">
             <div class="tec-cont">
@@ -79,19 +80,20 @@
         <div class="skills-container">
           <img src="img/weapon3.png" alt="weapon1">
           <h3>Ferramentas</h3>
-          <p>Utilizando frameworks e bibliotecas para o aumento do desempenho do desenvolvimento.</p>
+          <p>Utilizando frameworks e bibliotecas para o aumento do desempenho e agilidade do desenvolvimento.</p>
           <p class="subtitle">Ferramentas que utilizo:</p>
           <div class="tecnologias">
             <div class="tec-cont">
-              <a href="#">
                 <img src="./img/node.png" alt="node">
-              </a>
             </div>
             <div class="tec-cont">
               <img src="./img/net.png" alt="net">
             </div>
             <div class="tec-cont">
               <img src="./img/react.png" alt="react">
+            </div>
+            <div class="tec-cont">
+              <img src="./img/bootstrap.png" alt="bootstrap">
             </div>
           </div>
         </div>
@@ -102,28 +104,27 @@
     <!-- jobs inicio -->
     <section id="jobs-section">
       <h2>Veja meus últimos trabalhos</h2>
-      <p>Aqui estão os meus trabalhos mais recentes, para ver todos <a href="#">Clique aqui.</a> </p>
 
       <div class="job-container">
         <div class="card">
           <img src="./img/qrcode.png" alt="qr rede amazonica">
           <div class="info">
             <h2>Sistema QRCODE Rede Amazônica</h2>
-            <button>Mais informções</button>
+            <button id="qrcode">Mais informações</button>
           </div>
         </div>
         <div class="card">
-          <img src="./img/qrcode.png" alt="qr rede amazonica">
+          <img src="./img/paisemestre3.png" alt="paisemestres">
           <div class="info">
-            <h2>Sistema QRCODE Rede Amazônica</h2>
-            <button>Mais informções</button>
+            <h2>Pais e Mestres</h2>
+            <button id="paisemestres">Mais informações</button>
           </div>
         </div>
         <div class="card">
-          <img src="./img/qrcode.png" alt="qr rede amazonica">
+          <img src="./img/aged1.png" alt="agendamento">
           <div class="info">
-            <h2>Sistema QRCODE Rede Amazônica</h2>
-            <button>Mais informções</button>
+            <h2>Agendamento FAMETRO</h2>
+            <button id="aged">Mais informações</button>
           </div>
         </div>
       </div>
@@ -149,6 +150,21 @@
       <p>Desenvolvido por <span class="detail">Felipe Libertini - Desenvolvedor Fullstack</span></p>
     </footer>
     <!-- footer fim -->
+    <!-- modal -->
+    <div id="modal-info" class="modal-container">
+      <div class="modal">
+        <button class="close">x</button>
+        <div id="items-wrapper">
+          <div id="items">
+          </div>
+        </div>
+        <h3 id="title"></h3>
+        <p id="text">
+
+        </p>
+      </div>
+    </div>
+    <!-- fim modal -->
     <script src="./js/app.js"></script>
   </body>
 </html>
