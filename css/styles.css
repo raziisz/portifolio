@@ -151,7 +151,6 @@ h2 {
   flex: 1 1 20px;
   height: 80px;
   text-align: center;
-  border: 1px solid #ccc;
 }
 
 .skills-container .tecnologias .tec-cont img {
@@ -193,7 +192,6 @@ h2 {
   align-items: center;
   padding: 20px;
   width: 350px;
-  box-shadow: 0 0 5px 0 #e2e2e2;
   position: relative;
   margin: 0 10px;
 }
