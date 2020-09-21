@@ -80,6 +80,7 @@ function initialazeModal() {
   const text = document.getElementById('text')
   const title = document.getElementById('title');
   const items = document.getElementById('items');
+
   if (modal) {
     
     if (this.id === "qrcode") {
@@ -181,11 +182,19 @@ function initialazeModal() {
     modal.addEventListener('click', (e) => {
       if (e.target.id === 'modal-info' || e.target.className == 'close') {
         modal.classList.remove('view');
-        items.removeChild('div');
+        const fotosDiv = document.querySelectorAll('div.item');
+        fotosDiv.forEach(x => x.remove());
       }
     })
 
   }
+
+}
+
+function checkChildren(element, callback) {
+  const children = element.children;
+
+  callback(children);
 }
 
 
