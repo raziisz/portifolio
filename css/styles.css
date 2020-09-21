@@ -293,19 +293,27 @@ footer p {
 
 }
 
-footer form {
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+footer div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-footer input, footer textarea {
-  border: none;
-  padding: 15px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  width: 100%;
-  display: block;
+footer div ul li {
+  list-style-type: none;
+  padding: 0 10px;
+  margin: 0 20px;
+}
+
+footer div ul li a img:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+footer div ul li a img {
+  transition: transform 0.3s ease-in-out;
 }
 
 footer .detail {
@@ -404,6 +412,8 @@ footer .detail {
 .modal-container.view {
   display: flex;
 }
+
+
 
 @media (max-width: 450px) {
   /* geral */
