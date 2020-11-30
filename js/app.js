@@ -131,6 +131,56 @@ function initialazeModal() {
       title.innerText = "Agendamento FAMETRO";
       text.innerHTML = `Software web para controle de horarios de atividades, reuniões e eventos para a coordenação de <strong>Sistemas de Informação da Faculdade Metropolitana de Manaus</strong>, desenvolvido por mim como projeto final de estágio, tecnologias utilizadas .Net Core e React.js, utilizado banco de dados Mysql`
     }
+
+    if (this.id === "urnafakeson") {
+      const item1 = document.createElement('div');
+      const item2 = document.createElement('div');
+      const item3 = document.createElement('div');
+      const item4 = document.createElement('div');
+      const item5 = document.createElement('div');
+      const foto1 = document.createElement('img');
+      const foto2 = document.createElement('img');
+      const foto3 = document.createElement('img');
+      const foto4 = document.createElement('img');
+      const foto5 = document.createElement('img');
+      
+      item1.classList.add('item');
+      item2.classList.add('item');
+      item3.classList.add('item');
+      item4.classList.add('item');
+      item5.classList.add('item');
+      
+      foto1.src = "./img/urna-fakeson1.png";
+      foto1.alt = "Foto 1"
+      
+      foto2.src = "./img/urna-fakeson2.png";
+      foto2.alt = "Foto 2"
+  
+      foto3.src = "./img/urna-fakeson3.png";
+      foto3.alt = "Foto 3"
+  
+      foto4.src = "./img/urna-fakeson4.png";
+      foto4.alt = "Foto 4"
+  
+      foto5.src = "./img/urna-fakeson5.png";
+      foto5.alt = "Foto 5"
+  
+      item1.appendChild(foto3);
+      item2.appendChild(foto2);
+      item3.appendChild(foto1);
+      item4.appendChild(foto4);
+      item5.appendChild(foto5);
+      
+      items.appendChild(item1);
+      items.appendChild(item2);
+      items.appendChild(item3);
+      items.appendChild(item4);
+      items.appendChild(item5);
+      
+  
+      title.innerText = "Urna Web Fakeson";
+      text.innerHTML = `Autor do Urna Web Fakeson. Trata-se de sistema open-source de controle de votos, cadastro de candidatos e dashboard de apuração. Baseado no sistema de votos do Tribunal Regional Eleitoral do Brasil. Tecnologias utilizadas: <strong>.Net Core</strong> com <strong>Web API</strong>, banco de dados <strong>Mysql</strong>, <strong>React.js</strong> para o lado do cliente.`
+    }
     
     modal.classList.add('view');
   
