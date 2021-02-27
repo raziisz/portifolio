@@ -339,11 +339,14 @@ footer .detail {
   width: 60%;
   min-width: 450px;
   padding: 50px;
-  height: auto;
+  height: 75%;
   border: 10px solid #25015fe8;
   box-shadow: 0 0 0 10px #100029e8;
   position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
+
 
 @keyframes modal {
   from {
@@ -365,6 +368,7 @@ footer .detail {
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow: auto;
 }
 
 #items-wrapper #items img {
@@ -394,8 +398,8 @@ footer .detail {
 
 .close {
   position: absolute;
-  top: -30px;
-  right: -30px;
+  top: 0px;
+  right: 210px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -405,6 +409,7 @@ footer .detail {
   font-family: "PT Mono", monospace;
   cursor: pointer;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+  z-index: 3000;
 }
 
 .modal-container.view {
